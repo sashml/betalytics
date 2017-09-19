@@ -13,8 +13,8 @@ def load_data(db_file_name):
     return all_data
 
 
-def load_and_normalize_data(bookie='BET365'):
-    match_info = load_data()
+def load_and_normalize_data(db_file_name, bookie='BET365'):
+    match_info = load_data(db_file_name)
 
     columns_to_rename = {
         'HOMETEAM': 'HOME_TEAM',
@@ -43,3 +43,4 @@ def load_and_normalize_data(bookie='BET365'):
     print('Dataset[DropNA] Shape = {}'.format(match_info.shape))
 
     return match_info
+
