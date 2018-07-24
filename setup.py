@@ -4,21 +4,6 @@ import os
 from setuptools import setup, find_packages
 
 
-try:
-    version_tag = os.environ['VERSION_TAG']
-    with open('version', 'w') as version_file:
-        version_file.write(version_tag)
-except KeyError:
-    try:
-        with open('version') as version_file:
-            version_tag = version_file.read()
-    except:
-        version_tag = 'dev0'
-
-version = '0.0.1.{0}'.format(
-    version_tag
-)
-
 install_requires = [
     'setuptools',
     'numpy',
@@ -26,11 +11,11 @@ install_requires = [
 ]
 
 dependency_links = [
-
+    
 ]
 
 setup(name='betting_analytics',
-      version=version,
+      version=0.1,
       description='DataScience Framework For Betting Analytics',
       author='',
       author_email='',
