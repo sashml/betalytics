@@ -1,1 +1,1 @@
-# betting_analytics
+**Betalytics** - Data Science Framework For Betting Analytics

@@ -14,18 +14,16 @@ dependency_links = [
     
 ]
 
-setup(name='betting_analytics',
-      version=0.1,
+setup(name='betalytics',
+      version=0.2,
       description='DataScience Framework For Betting Analytics',
       author='',
       author_email='',
-      url='https://github.com/sashml/betting_analytics',
+      url='https://github.com/sashml/betalytics',
       packages=find_packages(),
       install_requires=install_requires,
       dependency_links=dependency_links,
-      # package_dir={'': '.'},
       package_data={'': ['*.yaml']},
-      # namespace_packages=['betting_analytics'],
       entry_points={
           'console_scripts':
               [
