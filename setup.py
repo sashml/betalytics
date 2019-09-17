@@ -8,6 +8,9 @@ install_requires = [
     'setuptools',
     'numpy',
     'pandas',
+    'requests',
+    'openpyxl',
+    'seaborn'
 ]
 
 dependency_links = [
@@ -15,7 +18,7 @@ dependency_links = [
 ]
 
 setup(name='betalytics',
-      version=0.2,
+      version=0.3,
       description='DataScience Framework For Betting Analytics',
       author='',
       author_email='',
